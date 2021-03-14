@@ -1,0 +1,15 @@
+/* For downloaded fonts */
+@font-face{
+    src: url(Fonts_ttf_format/DancingScript-Medium.ttf);
+    font-family: mazhaurul;
+}
+
+
+/* For direct internaet links fonts: copied links in html stylesheet (within comment below) */
+.paragraph{
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Lobster', cursive; */
+
+    font-family: mazhaurul;
+
+}

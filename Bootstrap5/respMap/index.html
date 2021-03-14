@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel_Slider</title>
+    <!-- JS-Boot's CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <!-- Popper -->
+    
+    <style>
+    .carousel-item{
+            height: 100vh;
+            background: black;
+            position:relative;
+        }
+
+        .container{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding-bottom: 50px;
+            color: white;
+
+           
+        }
+
+        .overlay_image{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            opacity: .6; /* to blur image*/
+
+        }
+
+        .map-responsive{
+            overflow: hidden;
+            padding-bottom: 50%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe{
+          
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        body{
+            font-family: cursive; /*'Cookie',*/
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+ <div class="container-fluid p-0">
+     <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top px-3">
+
+
+            <div class="container-fluid">
+
+
+
+                <a class="navbar-brand text-warning" href="">
+                    <img src="images/tulip.jpg" width="32px" height="30px" style= "border-radius: 30%;">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon">: )</span> 
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbar">
+
+
+                    <ul class="navbar-nav ms-auto text-center">   <!--style="margin-left: auto;"-->
+
+                        <li class="nav-item">
+                            <a class="nav-link text-primary text-center active" href="/"> Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Categories</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href=""> Conatacts</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href=""> Details</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled text-light" href="" > Services</a>
+                         </li>
+
+                    </ul>
+
+
+                </div>
+
+
+
+            </div>
+        </nav> 
+
+
+        
+
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <div class="overlay_image" style="background-image: url('images/rose_3.jpg') "></div>
+                    
+                    <div class="container">
+                        <h1>Example Slide1</h1>
+                        <!-- <img src="images/rose_3.jpg" width="30%" height="180px"/> -->
+                        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias culpa esse minima eaque voluptas maiores doloribus quas delectus? Nemo inventore quibusdam voluptatem id corporis, commodi aliquid sapiente consectetur maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia numquam commodi at eligendi. Expedita consequatur numquam quisquam tempore cupiditate!</p>
+                        <a href="" class="btn btn-lg btn-primary">Click Here</a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="1000">
+                    <div class="overlay_image" style="background-image: url('images/tulip.jpg') "></div>
+                    
+                    <div class="container">
+                        <h1>Example Slide2</h1>
+                        <!-- <img src="images/tulip.jpg"  width="30%" height="180px"> -->
+                        <p> 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur nihil libero eveniet, sequi recusandae repellendus quo odit laborum eius, expedita asperiores fuga perspiciatis similique autem fugiat deserunt. Distinctio, nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia numquam commodi at eligendi. Expedita consequatur numquam quisquam tempore cupiditate!</p>
+                        <a href="" class="btn btn-lg btn-primary">Click Here</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <div class="overlay_image"  style="background-image: url('images/folwerForest.jpg') "></div>
+                    <div class="container">
+                        <h1>Example Slide3</h1>
+                        <!-- <img src="images/folwerForest.jpg"  width="30%" height="180px"> -->
+                        <p> 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore asperiores nobis sed reiciendis fuga maiores dolor. Quisquam minima, incidunt, aliquid est, cumque enim distinctio commodi debitis quis ipsum esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia numquam commodi at eligendi. Expedita consequatur numquam quisquam tempore cupiditate!</p>
+                        <a href="" class="btn btn-lg btn-primary">Click Here</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <div class="overlay_image"  style="background-image: url('images/fruits.jpg') "></div>
+                    <div class="container">
+                        <h1>Example Slide4</h1>
+                        <!-- <img src="images/fruits.jpg"  width="30%" height="180px"> -->
+                        <p>4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ex repellat praesentium esse minus, dolorem maiores non harum veniam et unde fugit quasi expedita modi aliquam in, animi blanditiis sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus mollitia numquam commodi at eligendi. Expedita consequatur numquam quisquam tempore cupiditate!</p>
+                        <a href="" class="btn btn-lg btn-primary">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                <span class="sr-only"></span>
+                <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+
+            </a>
+
+            
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+                <span class="sr-only"></span>
+                <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+
+
+        <section>
+            <div>
+
+
+                <div class="align-items-center row mt-5 mb-5 p-5">
+
+
+                    <div class="col-xs-12 col-sm-12 col-lg-6 p-5">
+                        <h1><span style="color: blue">Contact</span> <span style="color: #33bb77">Information</span></h1><br/> <br/>
+                        
+                        <h4>Head Office_Info.</h4>
+                        <p>House # 007, Avenue # 001, Dhaka, Bangladesh</p><br/>
+
+                        <h4>Factory Address</h4>
+                        <p>House # 009, Avenue # 002, Dhaka, Bangladesh</p><br/>
+
+                        <h4>Phone</h4>
+                        <p>+88 015 67 89 10 11</p>
+                        <p>+88 016 67 89 10 11</p><br>
+
+                        <h4>Email</h4>
+                        <p>bit@gmail.com</p>
+                        <p>ibm@gmail.com</p>
+                        <!-- <img src="images/MazharulP.jpg" width="50%" height="auto"> -->
+                    </div>
+                    
+                    
+                    <div class="map-responsive col-xs-12 col-sm-12 col-lg-6">
+                        <iframe src="https://www.google.com/maps?q=Salextra%20Limited%2C%20Salextra%20Limited%2C%20House%23%2078%2FM%2C%20Flat%20%23%20D4%2C%20Rd%20No.%2011%2C%20Dhaka%201213&z=14&t=&ie=UTF8&output=embed" width="600" height="450"></iframe>
+                    <!-- <img src="images/Mazharul.jpg" width="50%" height="auto"> -->
+                    </div>
+            
+
+
+            </div>
+
+
+        </div>
+        </section>
+
+
+        
+
+
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

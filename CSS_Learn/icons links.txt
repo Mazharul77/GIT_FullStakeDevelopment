@@ -1,0 +1,12 @@
+/*for home icon*/
+
+<i class="fas fa-home"></i>
+
+/*for setting icon*/
+<i class="fas fa-cogs"></i>
+
+/*for searchicon*/
+<i class="fas fa-search"></i>
+
+/*for users icon*/
+<i class="fas fa-users"></i>

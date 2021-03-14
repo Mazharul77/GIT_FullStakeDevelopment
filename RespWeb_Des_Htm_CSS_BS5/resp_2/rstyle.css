@@ -1,0 +1,164 @@
+
+
+.main-top{
+    background-color: #323031;
+    color: #b2b2b2;
+    height: auto;
+    width:auto;
+}
+.lists .phone a{
+    color: #b2b2b2;
+}
+
+.lists{
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 17px;
+    line-height: 30px;
+    vertical-align: top;
+    justify-content: space-between;
+    
+    
+}
+
+
+@media (max-width: 1211px){
+    .main-top .lists{
+    text-align: center;
+    display: block;
+    /* overflow: hidden; */
+}
+}
+
+ .t_button{
+    box-sizing: border-box;
+    /* height: 39px; */
+    background-color:  #e7272d;
+    line-height: 14px;
+    border-radius: 7px; 
+    font-size: 13px;
+    
+    /* position: absolute; */
+    
+}
+    /* display: block; */
+
+.t_button >*{
+    /* position: absolute; */
+    width:  0px;
+    padding: 3px;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.carousel-item img{
+    max-width: 100vw;
+    height: 80vh;
+    padding: 15px;
+    background: lightgrey;
+}
+
+
+.navbar-nav  a:hover{
+    color: cyan !important;
+    background:#33bb77;
+    transition: scale(2x);
+    font-weight: bold;
+    font-style: italic;
+    transition: 300ms ease;
+    border-bottom: rgb(248, 23, 7) solid 2px;
+    padding: 15px;
+}
+
+.navbar-brand img{
+    height: 45px;
+    padding: 3px;
+
+}
+.navbar-nav  .nav-link{ 
+    text-transform: uppercase;
+    font-weight: bold;
+      
+}
+#about {
+    background: rgba(194, 243, 216, 0.644);
+    
+}
+.apart-1 {
+    background: rgb(146, 175, 192);
+    
+}
+
+#about img{
+    background: rgb(199, 219, 124);
+    width: 100%;
+    height: 100%;
+    
+    padding: 10px;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+}
+
+
+.card-deck img{
+    height: 183px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.iframe{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ration calculation: 16 : 9 (100% / 16*9 = 56.25) */
+
+}
+
+.iframe >* {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.quick-links li a{
+    color: white;
+}
+
+
+.fa{
+    /* color: blue; */
+    color: #00AACE;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.fa:hover{
+    color: coral;
+    transform: scale(1.3);
+    transition-delay: 50ms;
+    transition-duration: 1s;
+}

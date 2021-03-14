@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_With_CSS</title>
+<style>
+    .grid{
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        /* grid-column-gap: 1em;
+        grid-row-gap: 1em; */
+        grid-gap: 1em;
+        
+
+    }
+    .grid > div{
+        background: green;
+        padding: 20px;
+        /* border: 5px solid blue; */
+    }
+
+    .grid >div:nth-child(odd){
+        background-color: greenyellow;
+        /* border: 3px solid red; */
+
+    }
+</style>
+
+</head>
+<body>
+    <h1 style="color: green; text-align: center"><i>This is all about Grid System using CSS style!</i></h1>
+    <div class="grid">
+
+        <div>
+            
+            <p> <b>Div1. </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolor. Neque beatae quasi animi quis quo culpa voluptates, harum libero perspiciatis, aliquid quam ullam repudiandae eaque, nemo a delectus. Officiis?</p>
+
+        </div>
+
+        <div>
+           
+            <p><b>Div2. </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolor. Neque beatae quasi animi quis quo culpa voluptates, harum libero perspiciatis, aliquid quam ullam repudiandae eaque, nemo a delectus. Officiis?</p>
+            
+        </div>
+        <div>
+            
+            <p><b>Div3. </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolor. Neque beatae quasi animi quis quo culpa voluptates, harum libero perspiciatis, aliquid quam ullam repudiandae eaque, nemo a delectus. Officiis?</p>
+
+        </div>
+
+        <div>
+           
+            <p><b>Div4.</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolor. Neque beatae quasi animi quis quo culpa voluptates, harum libero perspiciatis, aliquid quam ullam repudiandae eaque, nemo a delectus. Officiis?</p>
+            
+        </div>
+        <div>
+           
+            <p><b>Div5. </b>Hello!</p>
+            
+        </div>
+        <div>
+            <p><b>Div6. </b> Hi 5!</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
